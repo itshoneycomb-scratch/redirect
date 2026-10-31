@@ -1,0 +1,32 @@
+
+<div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup-box">
+    <button class="popup-close" aria-label="Close popup" onclick="document.getElementById('popup-overlay').remove()">×</button>
+    <h2 id="popup-title">You are at the wrong place?</h2>
+    <p>This subdomain is for my redirects.</p>
+    <a class="popup-button" href="https://duckduckgo.com"></a>
+  </div>
+</div>
+<style>
+  .popup-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    display: grid; place-items: center; padding: 20px;
+    background: rgba(0,0,0,.55);
+  }
+  .popup-box {
+    position: relative; width: min(100%, 400px); padding: 32px;
+    border-radius: 12px; background: #fff; color: #1f2937;
+    font: 16px/1.5 system-ui, sans-serif; text-align: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,.25);
+  }
+  .popup-box h2 { margin: 0 25px 12px 0; }
+  .popup-close {
+    position: absolute; top: 8px; right: 12px; border: 0;
+    background: transparent; font-size: 28px; cursor: pointer;
+  }
+  .popup-button {
+    display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border-radius: 6px; background: #ffffff; color: #fff;
+    text-decoration: none;
+  }
+</style>
